@@ -1,5 +1,7 @@
 <?php
 
+require_once 'autoload.php';
+
 use Phpcoder1\SitemapGenerator\Video\Generator AS VideoSitemapGenerator;
 use Phpcoder1\SitemapGenerator\Video\VideoPlayerLoc;
 use Phpcoder1\SitemapGenerator\Video\VideoGalleryLoc;
@@ -7,8 +9,6 @@ use Phpcoder1\SitemapGenerator\Video\VideoPlatform;
 use Phpcoder1\SitemapGenerator\Video\VideoPrice;
 use Phpcoder1\SitemapGenerator\Video\VideoUploader;
 use Phpcoder1\SitemapGenerator\Generator AS Generator;
-
-require_once 'autoload.php';
 
 /*
 $Generator = new VideoSitemapGenerator();

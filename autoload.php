@@ -1,9 +1,8 @@
 <?php
-
 spl_autoload_register(function ($class) {
 
     // project-specific namespace prefix
-    $prefix = '';
+    $prefix = 'Phpcoder1\\SitemapGenerator\\';
 
     // base directory for the namespace prefix
     $base_dir = __DIR__ . '/src/';

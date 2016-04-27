@@ -1,19 +1,19 @@
 <?php
 
-use Sitemap\Video\Generator AS VideoSitemapGenerator;
-use Sitemap\Video\VideoPlayerLoc;
-use Sitemap\Video\VideoGalleryLoc;
-use Sitemap\Video\VideoPlatform;
-use Sitemap\Video\VideoPrice;
-use Sitemap\Video\VideoUploader;
-use Sitemap\Generator AS Generator;
+use Phpcoder1\SitemapGenerator\Video\Generator AS VideoSitemapGenerator;
+use Phpcoder1\SitemapGenerator\Video\VideoPlayerLoc;
+use Phpcoder1\SitemapGenerator\Video\VideoGalleryLoc;
+use Phpcoder1\SitemapGenerator\Video\VideoPlatform;
+use Phpcoder1\SitemapGenerator\Video\VideoPrice;
+use Phpcoder1\SitemapGenerator\Video\VideoUploader;
+use Phpcoder1\SitemapGenerator\Generator AS Generator;
 
-include_once 'autoload.php';
+require_once 'autoload.php';
 
 /*
 $Generator = new VideoSitemapGenerator();
 $Generator->setLocUrl('http://test.local/test-video-page');
-for($i=0; $i<10; $i++) {
+for ($i = 0; $i < 10; $i++) {
     $Generator->appendRow(
         'http://test.local/test.jpg',
         'test', '<test>', 'http://test.local/test.mkv',
@@ -24,7 +24,7 @@ for($i=0; $i<10; $i++) {
 }
 */
 $Generator = new Generator();
-for($i=0; $i<10; $i++) {
+for ($i = 0; $i < 10; $i++) {
     $Generator->appendRow('http://test.local/page.html', date("Y-m-d H:i"), Generator::CHANGE_FREQ_DAILY, '1');
 }
 //echo $Generator->getXml();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sitemap;
+namespace Phpcoder1\SitemapGenerator;
 
 
 class Generator

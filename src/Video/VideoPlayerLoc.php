@@ -1,6 +1,6 @@
 <?php
 
-namespace Sitemap\Video;
+namespace Phpcoder1\SitemapGenerator\Video;
 
 
 class VideoPlayerLoc

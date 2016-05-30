@@ -1,0 +1,23 @@
+{
+    "repositories": [
+        {
+          "type": "package",
+          "package": {
+            "name": "phpcoder1/sitemap-generator",
+            "version": "v1.0",
+            "source": {
+              "url": "https://github.com/phpcoder1/sitemap-generator.git",
+              "type": "git",
+              "reference": "master"
+            },
+            "autoload": {
+              "psr-4": { "Phpcoder1\\SitemapGenerator\\": "src" }
+            }
+          }
+        }
+    ],
+
+    "require": {
+        "phpcoder1/sitemap-generator": "^1.0"
+    }
+}
